@@ -25,7 +25,7 @@ function showPage(list, page) {
          studentListUL.insertAdjacentHTML("beforeend", 
             `<li class="student-item cf">
                <div class="student-details">
-                  <img class="avatar" src="${data[i].picture.thumbnail}" alt="Profile Picture">
+                  <img class="avatar" src="${data[i].picture.large}" alt="Profile Picture">
                   <h3>${data[i].name.first} ${data[i].name.last}</h3>
                   <span class="email">${data[i].email}</span>
                </div>
