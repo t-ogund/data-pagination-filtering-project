@@ -12,6 +12,30 @@ For assistance:
 
 
 
+const h2 = document.querySelector("h2");
+h2.insertAdjacentHTML("afterend", 
+`
+<label for="search" class="student-search">
+  <input id="search" placeholder="Search by name...">
+  <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
+</label>
+`
+)
+// const input = document.querySelector(".header");
+// console.log(input.children[1]);
+
+const input = document.querySelector("#search");
+const searchButton = document.querySelector(".student-search > button");
+console.log(searchButton);
+
+input.addEventListener("keyup", (e) => {
+   console.log(e.target.value)
+})
+
+searchButton.addEventListener("click", () => {
+   console.log("CLICKED!")
+})
+
 /*
 Create the `showPage` function
 This function creates and appends all the elements needed to display a page.
